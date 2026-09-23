@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Radja's Movie - Your Movie. Your Moment."
+    >
+
+    <title>Radja's Movie | Your Movie. Your Moment.</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+    <header class="navbar" id="navbar">
+
+        <div class="nav-container">
+
+            <a href="#home" class="logo">
+                <span>RADJA'S</span> MOVIE
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+
+                <a href="#home" class="nav-link active">Home</a>
+
+                <a href="#movies" class="nav-link">Movies</a>
+
+                <a href="#about" class="nav-link">About</a>
+
+                <a href="#contact" class="nav-link">Contact</a>
+
+                <a href="#movies" class="nav-book-btn">
+                    <i class="fa-solid fa-ticket"></i>
+                    Book Now
+                </a>
+
+            </nav>
+
+            <button
+                class="hamburger"
+                id="hamburger"
+                aria-label="Toggle navigation menu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             HERO
+        ========================== -->
+        <section class="hero" id="home">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <span class="hero-badge">
+                    <i class="fa-solid fa-film"></i>
+                    WELCOME TO RADJA'S MOVIE
+                </span>
+
+                <h1>
+                    Your Movie.
+                    <span>Your Moment.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Discover unforgettable stories, legendary characters,
+                    and cinematic experiences all in one place.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#movies" class="btn btn-primary">
+                        Explore Movies
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#about" class="btn btn-secondary">
+                        About Us
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Statistics -->
+
+            <div class="hero-stats">
+
+                <div class="stat-item">
+                    <strong>5+</strong>
+                    <span>Movies</span>
+                </div>
+
+                <div class="stat-divider"></div>
+
+                <div class="stat-item">
+                    <strong>4.9/5</strong>
+                    <span>Rating</span>
+                </div>
+
+                <div class="stat-divider"></div>
+
+                <div class="stat-item">
+                    <strong>24/7</strong>
+                    <span>Entertainment</span>
+                </div>
+
+            </div>
+
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MOVIES
+        ========================== -->
+        <section class="section movies-section" id="movies">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <div>
+                        <span class="section-label">
+                            <i class="fa-solid fa-clapperboard"></i>
+                            OUR COLLECTION
+                        </span>
+
+                        <h2>Featured Movies</h2>
+
+                        <p>
+                            Explore our collection of unforgettable movies.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- Search + Filter -->
+
+                <div class="movie-controls reveal">
+
+                    <div class="search-box">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input
+                            type="text"
+                            id="searchInput"
+                            placeholder="Search movies..."
+                            autocomplete="off"
+                        >
+
+                    </div>
+
+
+                    <div class="filter-buttons" id="filterButtons">
+
+                        <button
+                            class="filter-btn active"
+                            data-filter="All"
+                        >
+                            All
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            data-filter="Drama"
+                        >
+                            Drama
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            data-filter="Romance"
+                        >
+                            Romance
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            data-filter="Comedy"
+                        >
+                            Comedy
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            data-filter="Thriller"
+                        >
+                            Thriller
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            data-filter="Musical"
+                        >
+                            Musical
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Movie Cards -->
+
+                <div class="movies-grid" id="moviesGrid">
+                    <!-- Generated by JavaScript -->
+                </div>
+
+
+                <!-- No Result -->
+
+                <div class="no-results" id="noResults">
+
+                    <i class="fa-solid fa-film"></i>
+
+                    <h3>No movies found.</h3>
+
+                    <p>
+                        Try searching for another movie or category.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+        <section class="section about-section" id="about">
+
+            <div class="container">
+
+                <div class="about-grid">
+
+                    <div class="about-image reveal">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=85"
+                            alt="Cinema seats"
+                        >
+
+                        <div class="about-image-overlay"></div>
+
+                        <div class="about-floating-card">
+
+                            <i class="fa-solid fa-star"></i>
+
+                            <div>
+                                <strong>4.9/5</strong>
+                                <span>User Rating</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-content reveal">
+
+                        <span class="section-label">
+                            <i class="fa-solid fa-circle-info"></i>
+                            ABOUT US
+                        </span>
+
+                        <h2>
+                            About Radja's Movie
+                        </h2>
+
+                        <p>
+                            Radja's Movie adalah platform film yang dibuat untuk
+                            para pecinta film yang ingin menemukan kisah-kisah menarik
+                            dan menikmati pengalaman menonton film yang seru!
+                        </p>
+
+                        <p>
+                            Mulai dari film klasik legendaris hingga kisah romantis yang tak terlupakan,
+                            tujuan saya adalah membuat pencarian film menjadi mudah, menyenangkan,
+                            dan penuh nuansa sinematik.
+                        </p>
+
+
+                        <div class="about-stats">
+
+                            <div class="about-stat">
+                                <strong>5+</strong>
+                                <span>Movies</span>
+                            </div>
+
+                            <div class="about-stat">
+                                <strong>4.9</strong>
+                                <span>User Rating</span>
+                            </div>
+
+                            <div class="about-stat">
+                                <strong>24/7</strong>
+                                <span>Movie Discovery</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+        <section class="section contact-section" id="contact">
+
+            <div class="container">
+
+                <div class="contact-header reveal">
+
+                    <span class="section-label">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        CONTACT
+                    </span>
+
+                    <h2>Get In Touch</h2>
+
+                    <p>
+                        Have a question or suggestion?
+                        We'd love to hear from you.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-grid">
+
+                    <!-- Contact Form -->
+
+                    <div class="contact-form-wrapper reveal">
+
+                        <form id="contactForm">
+
+                            <div class="form-row">
+
+                                <div class="form-group">
+
+                                    <label for="contactName">
+                                        Name
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="contactName"
+                                        name="name"
+                                        placeholder="Your name"
+                                        required
+                                    >
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="contactEmail">
+                                        Email
+                                    </label>
+
+                                    <input
+                                        type="email"
+                                        id="contactEmail"
+                                        name="email"
+                                        placeholder="your@email.com"
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="contactSubject">
+                                    Subject
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="contactSubject"
+                                    name="subject"
+                                    placeholder="What is this about?"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="contactMessage">
+                                    Message
+                                </label>
+
+                                <textarea
+                                    id="contactMessage"
+                                    name="message"
+                                    rows="6"
+                                    placeholder="Write your message..."
+                                    required
+                                ></textarea>
+
+                            </div>
+
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary submit-btn"
+                            >
+                                Send Message
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+
+                        </form>
+
+                    </div>
+
+
+                    <!-- Contact Information -->
+
+                    <div class="contact-info reveal">
+
+                        <div class="contact-info-card">
+
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+
+                            <div>
+                                <span>Email</span>
+                                <a href="mailto:amarullahradja@gmail.com">
+                                    amarullahradja@gmail.com
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-info-card">
+
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+
+                            <div>
+                                <span>Phone</span>
+                                <a href="tel:+6289654085219">
+                                    +62 896-5408-5219
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-info-card">
+
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+
+                            <div>
+                                <span>Location</span>
+                                <p>Tangerang, Indonesia</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="social-area">
+
+                            <h4>Follow Us</h4>
+
+                            <div class="social-links">
+
+                                <a
+                                    href="#"
+                                    aria-label="Instagram"
+                                >
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+
+                                <a
+                                    href="#"
+                                    aria-label="Facebook"
+                                >
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+
+                                <a
+                                    href="#"
+                                    aria-label="Twitter"
+                                >
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+
+                                <a
+                                    href="#"
+                                    aria-label="YouTube"
+                                >
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         MOVIE DETAIL MODAL
+    ========================== -->
+
+    <div
+        class="modal"
+        id="movieModal"
+        aria-hidden="true"
+    >
+
+        <div class="modal-overlay"></div>
+
+        <div class="modal-container movie-modal-container">
+
+            <button
+                class="modal-close"
+                data-close="movieModal"
+                aria-label="Close modal"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+
+            <div class="movie-modal-content">
+
+                <div class="movie-modal-poster">
+
+                    <img
+                        id="detailPoster"
+                        src=""
+                        alt=""
+                    >
+
+                </div>
+
+
+                <div class="movie-modal-info">
+
+                    <span
+                        class="modal-category"
+                        id="detailGenre"
+                    ></span>
+
+                    <h2 id="detailTitle"></h2>
+
+
+                    <div class="movie-meta">
+
+                        <span>
+                            <i class="fa-regular fa-calendar"></i>
+                            <span id="detailYear"></span>
+                        </span>
+
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                            <span id="detailDuration"></span>
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-star"></i>
+                            <span id="detailRating"></span>
+                        </span>
+
+                    </div>
+
+
+                    <div class="detail-price">
+                        <span>Ticket Price</span>
+                        <strong id="detailPrice"></strong>
+                    </div>
+
+
+                    <p
+                        class="detail-description"
+                        id="detailDescription"
+                    ></p>
+
+
+                    <div class="modal-actions">
+
+                        <button
+                            class="btn btn-secondary"
+                            id="detailTrailerBtn"
+                        >
+                            <i class="fa-solid fa-play"></i>
+                            Watch Trailer
+                        </button>
+
+                        <button
+                            class="btn btn-primary"
+                            id="detailBuyBtn"
+                        >
+                            <i class="fa-solid fa-ticket"></i>
+                            Buy Ticket
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         TRAILER MODAL
+    ========================== -->
+
+    <div
+        class="modal"
+        id="trailerModal"
+        aria-hidden="true"
+    >
+
+        <div class="modal-overlay"></div>
+
+        <div class="modal-container trailer-modal-container">
+
+            <button
+                class="modal-close"
+                data-close="trailerModal"
+                aria-label="Close trailer"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+
+            <div class="trailer-header">
+
+                <span>
+                    <i class="fa-solid fa-film"></i>
+                    OFFICIAL TRAILER
+                </span>
+
+                <h2 id="trailerTitle">
+                    Movie Trailer
+                </h2>
+
+            </div>
+
+
+            <div class="video-wrapper">
+
+                <iframe
+                    id="trailerFrame"
+                    src=""
+                    title="Movie Trailer"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                ></iframe>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         BOOKING MODAL
+    ========================== -->
+
+    <div
+        class="modal"
+        id="bookingModal"
+        aria-hidden="true"
+    >
+
+        <div class="modal-overlay"></div>
+
+        <div class="modal-container booking-modal-container">
+
+            <button
+                class="modal-close"
+                data-close="bookingModal"
+                aria-label="Close booking"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+
+            <div class="booking-header">
+
+                <span class="section-label">
+                    <i class="fa-solid fa-ticket"></i>
+                    TICKET BOOKING
+                </span>
+
+                <h2>Book Your Movie</h2>
+
+                <p>
+                    Reserve your cinematic moment.
+                </p>
+
+            </div>
+
+
+            <form id="bookingForm">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="bookingName">
+                            Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="bookingName"
+                            required
+                            placeholder="Your name"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="bookingEmail">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="bookingEmail"
+                            required
+                            placeholder="your@email.com"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="bookingMovie">
+                        Movie
+                    </label>
+
+                    <select
+                        id="bookingMovie"
+                        required
+                    >
+                        <!-- Generated by JS -->
+                    </select>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="bookingDate">
+                            Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="bookingDate"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="bookingTime">
+                            Time
+                        </label>
+
+                        <select
+                            id="bookingTime"
+                            required
+                        >
+
+                            <option value="">
+                                Select time
+                            </option>
+
+                            <option value="10:00 AM">
+                                10:00 AM
+                            </option>
+
+                            <option value="01:00 PM">
+                                01:00 PM
+                            </option>
+
+                            <option value="04:00 PM">
+                                04:00 PM
+                            </option>
+
+                            <option value="07:00 PM">
+                                07:00 PM
+                            </option>
+
+                            <option value="09:30 PM">
+                                09:30 PM
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="bookingQuantity">
+                        Number of Tickets
+                    </label>
+
+                    <select
+                        id="bookingQuantity"
+                        required
+                    >
+
+                        <option value="1">1 Ticket</option>
+                        <option value="2">2 Tickets</option>
+                        <option value="3">3 Tickets</option>
+                        <option value="4">4 Tickets</option>
+                        <option value="5">5 Tickets</option>
+                        <option value="6">6 Tickets</option>
+                        <option value="7">7 Tickets</option>
+                        <option value="8">8 Tickets</option>
+                        <option value="9">9 Tickets</option>
+                        <option value="10">10 Tickets</option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Booking Summary -->
+
+                <div class="booking-summary">
+
+                    <div class="summary-title">
+                        Booking Summary
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>Movie</span>
+
+                        <strong id="summaryMovie">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>Ticket Price</span>
+
+                        <strong id="summaryPrice">
+                            $0.00
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>Quantity</span>
+
+                        <strong id="summaryQuantity">
+                            1
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-total">
+
+                        <span>Total Price</span>
+
+                        <strong id="summaryTotal">
+                            $0.00
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary booking-submit"
+                >
+                    <i class="fa-solid fa-check"></i>
+                    Confirm Booking
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         SUCCESS MODAL
+    ========================== -->
+
+    <div
+        class="modal"
+        id="successModal"
+        aria-hidden="true"
+    >
+
+        <div class="modal-overlay"></div>
+
+        <div class="success-container">
+
+            <div class="success-icon">
+
+                <i class="fa-solid fa-check"></i>
+
+            </div>
+
+            <h2 id="successTitle">
+                Booking Confirmed!
+            </h2>
+
+            <p id="successMessage">
+                Thank you for booking with Radja's Movie.
+            </p>
+
+            <div
+                class="booking-id"
+                id="bookingId"
+            >
+                RM-00000
+            </div>
+
+            <button
+                class="btn btn-primary"
+                data-close="successModal"
+            >
+                Done
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         TOAST
+    ========================== -->
+
+    <div
+        class="toast"
+        id="toast"
+    >
+
+        <div class="toast-icon">
+            <i class="fa-solid fa-check"></i>
+        </div>
+
+        <div>
+            <strong id="toastTitle">
+                Success
+            </strong>
+
+            <span id="toastMessage">
+                Action completed.
+            </span>
+        </div>
+
+        <button id="toastClose">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </div>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+
+                    <a href="#home" class="logo">
+                        <span>RADJA'S</span> MOVIE
+                    </a>
+
+                    <p>
+                        Your Movie. Your Moment.
+                    </p>
+
+                    <div class="social-links">
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Twitter">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <h4>Quick Links</h4>
+
+                    <a href="#home">Home</a>
+
+                    <a href="#movies">Movies</a>
+
+                    <a href="#about">About</a>
+
+                    <a href="#contact">Contact</a>
+
+                </div>
+
+
+                <div class="footer-info">
+
+                    <h4>Movie Experience</h4>
+
+                    <p>
+                        Discover stories that stay with you.
+                    </p>
+
+                    <span>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Tangerang, Indonesia
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Radja's Movie. All Rights Reserved.
+                </p>
+
+                <span>
+                    Made with
+                    <i class="fa-solid fa-heart"></i>
+                    for movie lovers.
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Back To Top -->
+
+    <button
+        class="back-to-top"
+        id="backToTop"
+        aria-label="Back to top"
+    >
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
