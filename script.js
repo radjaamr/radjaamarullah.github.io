@@ -85,7 +85,7 @@ const movies = [
         description:
             "Sepasang suami istri muda dihadapkan pada keputusan yang sulit ketika seorang pria asing yang kaya raya menawarkan satu juta dolar kepada mereka sebagai imbalan untuk menghabiskan satu malam bersama sang istri.",
         poster:
-            "https://m.media-amazon.com/images/M/MV5BMTQ2NjE4NDE2NV5BMl5BanBnXkFtZTgwOTcwNDE5NzE@._V1_FMjpg_UX1000_.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYZU7XkHr4-4bpw4_D8z7WBfoo-KtAMJTK5Zssih5MHQ&s=10",
         trailer:
             "https://www.youtube.com/embed/HumfQ0xklFU"
     },
