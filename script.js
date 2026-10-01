@@ -85,7 +85,7 @@ const movies = [
         description:
             "Sepasang suami istri muda dihadapkan pada keputusan yang sulit ketika seorang pria asing yang kaya raya menawarkan satu juta dolar kepada mereka sebagai imbalan untuk menghabiskan satu malam bersama sang istri.",
         poster:
-            "https://m.media-amazon.com/images/M/MV5BMDEyN2UyYjItNjRjMy00YzM3LWEwNzktNDRjNjA5NmIzMmU1XkEyXkFqcGc@._V1_.jpg",
+            "https://m.media-amazon.com/images/M/MV5BMTQ2NjE4NDE2NV5BMl5BanBnXkFtZTgwOTcwNDE5NzE@._V1_FMjpg_UX1000_.jpg",
         trailer:
             "https://www.youtube.com/embed/HumfQ0xklFU"
     },
@@ -99,7 +99,7 @@ const movies = [
         rating: 7.4,
         price: 12,
         description:
-            "Louisa Clark becomes a caregiver for a wealthy man who is paralyzed after an accident. As they spend more time together, their relationship changes both of their lives.",
+            "Seorang pria yang mengalami kelumpuhan bertemu dengan perempuan muda yang menjadi pengasuhnya. Hubungan mereka perlahan berubah dan membuat keduanya melihat kehidupan dari sudut pandang yang berbeda.",
         poster:
             "https://placehold.co/600x900/15151C/FFFFFF?text=Me%20Before%20You",
         trailer:
@@ -115,9 +115,9 @@ const movies = [
         rating: 7.0,
         price: 11,
         description:
-            "A tough debt collector falls in love with a woman struggling with her father's debts. Their unexpected relationship brings warmth and emotional changes into both of their lives.",
+            "Seorang penagih utang jatuh cinta kepada perempuan yang sedang menghadapi masalah kesehatan. Pertemuan mereka membawa kisah cinta yang sederhana, emosional, dan penuh pengorbanan.",
         poster:
-            "https://placehold.co/600x900/15151C/FFFFFF?text=Man%20in%20Love",
+            "https://m.media-amazon.com/images/M/MV5BMzY3Zjc5ZTAtZjQ0NS00MzExLTkwOGQtYTMyYTE3Yjc1OGRhXkEyXkFqcGc@._V1_.jpg",
         trailer:
             "https://www.youtube.com/embed/2Vv-BfVoq4g?autoplay=1&rel=0"
     },
@@ -131,9 +131,9 @@ const movies = [
         rating: 6.6,
         price: 11,
         description:
-            "Two teenagers dealing with difficult personal experiences form a close friendship and discover how much they can mean to each other.",
+            "Dua remaja dengan masalah pribadi masing-masing bertemu dan saling membantu menemukan kembali kebahagiaan. Hubungan mereka membuat keduanya belajar tentang kehidupan, kehilangan, dan harapan.",
         poster:
-            "https://placehold.co/600x900/15151C/FFFFFF?text=All%20the%20Bright%20Places",
+            "https://m.media-amazon.com/images/M/MV5BMTIxYmY0ZGItMDI3MC00OTc3LTg2YzAtZWY4ODZjMWVhYzI1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         trailer:
             "https://www.youtube.com/embed/zfQXKVCudec?autoplay=1&rel=0"
     },
@@ -147,9 +147,9 @@ const movies = [
         rating: 7.9,
         price: 12,
         description:
-            "A shy high school student finds friendship, confidence, and new experiences after becoming friends with two outgoing classmates.",
+            "Seorang siswa pemalu mencoba beradaptasi dengan kehidupan sekolah setelah bertemu dua teman baru. Persahabatan mereka membantunya menghadapi masa lalu dan menemukan keberanian untuk menjadi dirinya sendiri.",
         poster:
-            "https://placehold.co/600x900/15151C/FFFFFF?text=The%20Perks%20of%20Being%20a%20Wallflower",
+            "https://m.media-amazon.com/images/M/MV5BNTY0ZTI2NzQtYWI1YS00ZWM3LWFmMjMtZWYxNmNmOTI0MGJjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         trailer:
             "https://www.youtube.com/embed/n5rh7O4IDc0?autoplay=1&rel=0"
     },
@@ -163,9 +163,9 @@ const movies = [
         rating: 8.4,
         price: 13,
         description:
-            "Two teenagers living in different places mysteriously begin switching bodies and gradually discover a connection that reaches beyond time and distance.",
+            "Dua remaja yang tidak saling mengenal tiba-tiba mengalami pertukaran tubuh secara misterius. Dari kejadian tersebut, mereka membangun hubungan yang semakin dalam dan berusaha menemukan satu sama lain.",
         poster:
-            "https://placehold.co/600x900/15151C/FFFFFF?text=Kimi%20no%20Na%20wa",
+            "https://m.media-amazon.com/images/M/MV5BM2U1YzcyOGQtNjY5NC00ZWM0LTk0ZDItMTVhN2E2ODk3MWQ4XkEyXkFqcGc@._V1_.jpg",
         trailer:
             "https://www.youtube.com/embed/xU47nhruN-Q?autoplay=1&rel=0"
     },
@@ -179,9 +179,9 @@ const movies = [
         rating: 8.1,
         price: 13,
         description:
-            "A former bully tries to make amends with a deaf classmate he once hurt while learning about friendship, forgiveness, and understanding.",
+            "Seorang mantan pelaku perundungan berusaha memperbaiki kesalahannya kepada seorang gadis tunarungu yang pernah ia sakiti. Kisah ini membahas persahabatan, penyesalan, pengampunan, dan kesempatan untuk berubah.",
         poster:
-            "https://placehold.co/600x900/15151C/FFFFFF?text=A%20Silent%20Voice",
+            "https://m.media-amazon.com/images/M/MV5BOTFiNzRiOWEtYTQwNy00NmRiLWE0ZWYtNTE0YjExZjFmZjkwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
         trailer:
             "https://www.youtube.com/embed/nfK6UgLra7g?autoplay=1&rel=0"
     },
@@ -195,9 +195,9 @@ const movies = [
         rating: 7.6,
         price: 11,
         description:
-            "A tiny girl living secretly beneath the floorboards of a house forms an unexpected friendship with a young human boy.",
+            "Arrietty adalah seorang gadis kecil dari keluarga manusia mini yang diam-diam tinggal di bawah rumah manusia. Kehidupannya berubah ketika ia bertemu seorang anak laki-laki dan membentuk persahabatan yang tidak biasa.",
         poster:
-            "https://placehold.co/600x900/15151C/FFFFFF?text=Arrietty",
+            "https://m.media-amazon.com/images/M/MV5BMTAxNzk1NjA3ODdeQTJeQWpwZ15BbWU3MDQ0MDc4OTQ@._V1_.jpg",
         trailer:
             "https://www.youtube.com/embed/9CtIXPhPo0g?autoplay=1&rel=0"
     },
@@ -211,9 +211,9 @@ const movies = [
         rating: 7.6,
         price: 11,
         description:
-            "A young boy discovers a magical goldfish named Ponyo, whose wish to become human creates a series of magical events.",
+            "Seekor ikan kecil bernama Ponyo bertemu dengan seorang anak laki-laki bernama Sosuke dan ingin menjadi manusia. Keinginan tersebut membawa mereka pada petualangan penuh keajaiban, persahabatan, dan keluarga.",
         poster:
-            "https://placehold.co/600x900/15151C/FFFFFF?text=Ponyo",
+            "https://m.media-amazon.com/images/M/MV5BZDkzMzQ5ZmQtOTA3MC00MjhiLTk5M2UtNzk0MjEzZmVjN2UxXkEyXkFqcGc@._V1_.jpg",
         trailer:
             "https://www.youtube.com/embed/CsR3KVgBzSM?autoplay=1&rel=0"
     },
@@ -227,9 +227,9 @@ const movies = [
         rating: 8.5,
         price: 12,
         description:
-            "During the final months of World War II, two siblings struggle to survive while trying to protect each other after being separated from their family.",
+            "Kisah dua saudara yang berusaha bertahan hidup di tengah kondisi Jepang setelah Perang Dunia II. Film ini menggambarkan hubungan keluarga, kehilangan, dan perjuangan hidup dalam situasi yang sulit.",
         poster:
-            "https://placehold.co/600x900/15151C/FFFFFF?text=Grave%20of%20the%20Fireflies",
+            "https://m.media-amazon.com/images/M/MV5BNTY5MmE2OGMtN2IxNC00MDY4LTkwMGEtZDUzOTYyNWE0ZTNjXkEyXkFqcGc@._V1_.jpg",
         trailer:
             "https://www.youtube.com/embed/4vPeTSRd580?autoplay=1&rel=0"
     },
@@ -243,9 +243,9 @@ const movies = [
         rating: 7.7,
         price: 13,
         description:
-            "An aspiring aircraft designer follows his dream of creating beautiful airplanes while experiencing love, ambition, and the challenges of his era.",
+            "Kisah Jiro Horikoshi, seorang pemuda yang bermimpi menjadi perancang pesawat. Perjalanannya memperlihatkan perjuangan mengejar impian, cinta, serta berbagai pilihan sulit dalam hidup.",
         poster:
-            "https://placehold.co/600x900/15151C/FFFFFF?text=The%20Wind%20Rises",
+            "https://m.media-amazon.com/images/M/MV5BMTU4NDg0MzkzNV5BMl5BanBnXkFtZTgwODA3Mzc1MDE@._V1_FMjpg_UX1000_.jpg",
         trailer:
             "https://www.youtube.com/embed/PhHoCnRg1Yw?autoplay=1&rel=0"
     }
