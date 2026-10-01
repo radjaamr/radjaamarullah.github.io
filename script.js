@@ -12,151 +12,242 @@ const movies = [
 
     {
         id: 1,
-
         title: "Fight Club",
-
         genre: ["Drama", "Thriller"],
-
         year: 1999,
-
         duration: "139 min",
-
         rating: 8.8,
-
         price: 12,
-
         description:
             "Seorang pegawai kantoran biasa yang menderita insomnia bertemu dengan seorang pembuat sabun misterius bernama Tyler Durden. Persahabatan mereka berujung pada pendirian sebuah klub pertarungan bawah tanah yang mengubah hidup mereka selamanya.",
-
-        /*
-         * Poster image.
-         * Replace this URL with your preferred poster if needed.
-         */
         poster:
             "https://image.tmdb.org/t/p/w780/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg",
-
-        /*
-         * YouTube trailer:
-         * 20th Century Studios
-         */
         trailer:
             "https://www.youtube.com/embed/BdJKm16Co6M?autoplay=1&rel=0"
     },
 
-
     {
         id: 2,
-
         title: "Forrest Gump",
-
         genre: ["Drama", "Romance"],
-
         year: 1994,
-
         duration: "142 min",
-
         rating: 8.8,
-
         price: 13,
-
         description:
             "Forrest Gump adalah seorang pria yang baik hati; cara pandangnya yang sederhana terhadap dunia membawanya melewati berbagai momen luar biasa dalam sejarah Amerika, sementara ia tetap mencintai sahabat masa kecilnya, Jenny.",
-
         poster:
             "https://image.tmdb.org/t/p/w780/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg",
-
-        /*
-         * Paramount Movies
-         */
         trailer:
             "https://www.youtube.com/embed/Mj9IA9tTfio?autoplay=1&rel=0"
     },
 
-
     {
         id: 3,
-
         title: "How to Lose a Guy in 10 Days",
-
         genre: ["Romance", "Comedy"],
-
         year: 2003,
-
         duration: "116 min",
-
         rating: 6.6,
-
         price: 11,
-
         description:
             "Andie Anderson adalah seorang jurnalis yang memutuskan untuk menulis artikel tentang cara membuat seorang pria mengakhiri hubungan dalam sepuluh hari. Di saat yang sama, Benjamin Barry bertaruh bahwa ia bisa membuat seorang wanita jatuh cinta padanya.",
-
         poster:
             "https://m.media-amazon.com/images/M/MV5BMjE4NTA1NzExN15BMl5BanBnXkFtZTYwNjc3MjM3._V1_FMjpg_UX1000_.jpg",
-
-        /*
-         * Rotten Tomatoes Classic Trailers
-         */
         trailer:
             "https://www.youtube.com/embed/2ZMGk_Ml1fc?autoplay=1&rel=0"
     },
 
-
     {
         id: 4,
-
         title: "La La Land",
-
         genre: ["Musical", "Romance", "Drama"],
-
         year: 2016,
-
         duration: "128 min",
-
         rating: 8.0,
-
         price: 14,
-
         description:
             "Seorang musisi jazz yang penuh gairah dan seorang aktris pemula bertemu di Los Angeles dan jatuh cinta saat berusaha mewujudkan impian mereka di Kota Bintang.",
-
         poster:
             "https://image.tmdb.org/t/p/w780/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
-
-        /*
-         * Lionsgate Movies
-         */
         trailer:
             "https://www.youtube.com/embed/0pdqf4P9MB8?autoplay=1&rel=0"
     },
 
-
     {
         id: 5,
-
         title: "Indecent Proposal",
-
         genre: ["Drama", "Romance"],
-
         year: 1993,
-
         duration: "117 min",
-
         rating: 6.1,
-
         price: 12,
-
         description:
             "Sepasang suami istri muda dihadapkan pada keputusan yang sulit ketika seorang pria asing yang kaya raya menawarkan satu juta dolar kepada mereka sebagai imbalan untuk menghabiskan satu malam bersama sang istri.",
-
         poster:
             "https://m.media-amazon.com/images/M/MV5BMDEyN2UyYjItNjRjMy00YzM3LWEwNzktNDRjNjA5NmIzMmU1XkEyXkFqcGc@._V1_.jpg",
-
-        /*
-         * Rotten Tomoatoes
-         */
         trailer:
             "https://www.youtube.com/embed/HumfQ0xklFU"
+    },
+
+    {
+        id: 6,
+        title: "Me Before You",
+        genre: ["Romance", "Drama"],
+        year: 2016,
+        duration: "110 min",
+        rating: 7.4,
+        price: 12,
+        description:
+            "Louisa Clark becomes a caregiver for a wealthy man who is paralyzed after an accident. As they spend more time together, their relationship changes both of their lives.",
+        poster:
+            "https://placehold.co/600x900/15151C/FFFFFF?text=Me%20Before%20You",
+        trailer:
+            "https://www.youtube.com/embed/Eh993__rOxA?autoplay=1&rel=0"
+    },
+
+    {
+        id: 7,
+        title: "Man in Love",
+        genre: ["Romance", "Drama"],
+        year: 2014,
+        duration: "120 min",
+        rating: 7.0,
+        price: 11,
+        description:
+            "A tough debt collector falls in love with a woman struggling with her father's debts. Their unexpected relationship brings warmth and emotional changes into both of their lives.",
+        poster:
+            "https://placehold.co/600x900/15151C/FFFFFF?text=Man%20in%20Love",
+        trailer:
+            "https://www.youtube.com/embed/2Vv-BfVoq4g?autoplay=1&rel=0"
+    },
+
+    {
+        id: 8,
+        title: "All the Bright Places",
+        genre: ["Romance", "Drama"],
+        year: 2020,
+        duration: "108 min",
+        rating: 6.6,
+        price: 11,
+        description:
+            "Two teenagers dealing with difficult personal experiences form a close friendship and discover how much they can mean to each other.",
+        poster:
+            "https://placehold.co/600x900/15151C/FFFFFF?text=All%20the%20Bright%20Places",
+        trailer:
+            "https://www.youtube.com/embed/zfQXKVCudec?autoplay=1&rel=0"
+    },
+
+    {
+        id: 9,
+        title: "The Perks of Being a Wallflower",
+        genre: ["Drama", "Romance"],
+        year: 2012,
+        duration: "103 min",
+        rating: 7.9,
+        price: 12,
+        description:
+            "A shy high school student finds friendship, confidence, and new experiences after becoming friends with two outgoing classmates.",
+        poster:
+            "https://placehold.co/600x900/15151C/FFFFFF?text=The%20Perks%20of%20Being%20a%20Wallflower",
+        trailer:
+            "https://www.youtube.com/embed/n5rh7O4IDc0?autoplay=1&rel=0"
+    },
+
+    {
+        id: 10,
+        title: "Kimi no Na wa",
+        genre: ["Animation", "Romance", "Drama"],
+        year: 2016,
+        duration: "106 min",
+        rating: 8.4,
+        price: 13,
+        description:
+            "Two teenagers living in different places mysteriously begin switching bodies and gradually discover a connection that reaches beyond time and distance.",
+        poster:
+            "https://placehold.co/600x900/15151C/FFFFFF?text=Kimi%20no%20Na%20wa",
+        trailer:
+            "https://www.youtube.com/embed/xU47nhruN-Q?autoplay=1&rel=0"
+    },
+
+    {
+        id: 11,
+        title: "A Silent Voice",
+        genre: ["Animation", "Drama", "Romance"],
+        year: 2016,
+        duration: "130 min",
+        rating: 8.1,
+        price: 13,
+        description:
+            "A former bully tries to make amends with a deaf classmate he once hurt while learning about friendship, forgiveness, and understanding.",
+        poster:
+            "https://placehold.co/600x900/15151C/FFFFFF?text=A%20Silent%20Voice",
+        trailer:
+            "https://www.youtube.com/embed/nfK6UgLra7g?autoplay=1&rel=0"
+    },
+
+    {
+        id: 12,
+        title: "Arrietty",
+        genre: ["Animation", "Fantasy"],
+        year: 2010,
+        duration: "94 min",
+        rating: 7.6,
+        price: 11,
+        description:
+            "A tiny girl living secretly beneath the floorboards of a house forms an unexpected friendship with a young human boy.",
+        poster:
+            "https://placehold.co/600x900/15151C/FFFFFF?text=Arrietty",
+        trailer:
+            "https://www.youtube.com/embed/9CtIXPhPo0g?autoplay=1&rel=0"
+    },
+
+    {
+        id: 13,
+        title: "Ponyo",
+        genre: ["Animation", "Fantasy", "Adventure"],
+        year: 2008,
+        duration: "101 min",
+        rating: 7.6,
+        price: 11,
+        description:
+            "A young boy discovers a magical goldfish named Ponyo, whose wish to become human creates a series of magical events.",
+        poster:
+            "https://placehold.co/600x900/15151C/FFFFFF?text=Ponyo",
+        trailer:
+            "https://www.youtube.com/embed/CsR3KVgBzSM?autoplay=1&rel=0"
+    },
+
+    {
+        id: 14,
+        title: "Grave of the Fireflies",
+        genre: ["Animation", "Drama", "War"],
+        year: 1988,
+        duration: "89 min",
+        rating: 8.5,
+        price: 12,
+        description:
+            "During the final months of World War II, two siblings struggle to survive while trying to protect each other after being separated from their family.",
+        poster:
+            "https://placehold.co/600x900/15151C/FFFFFF?text=Grave%20of%20the%20Fireflies",
+        trailer:
+            "https://www.youtube.com/embed/4vPeTSRd580?autoplay=1&rel=0"
+    },
+
+    {
+        id: 15,
+        title: "The Wind Rises",
+        genre: ["Animation", "Drama", "Romance"],
+        year: 2013,
+        duration: "126 min",
+        rating: 7.7,
+        price: 13,
+        description:
+            "An aspiring aircraft designer follows his dream of creating beautiful airplanes while experiencing love, ambition, and the challenges of his era.",
+        poster:
+            "https://placehold.co/600x900/15151C/FFFFFF?text=The%20Wind%20Rises",
+        trailer:
+            "https://www.youtube.com/embed/PhHoCnRg1Yw?autoplay=1&rel=0"
     }
 
 ];
@@ -166,17 +257,23 @@ const movies = [
    DOM ELEMENTS
 ========================================================= */
 
-const navbar = document.getElementById("navbar");
+const navbar =
+    document.getElementById("navbar");
 
-const hamburger = document.getElementById("hamburger");
+const hamburger =
+    document.getElementById("hamburger");
 
-const navMenu = document.getElementById("navMenu");
+const navMenu =
+    document.getElementById("navMenu");
 
-const navLinks = document.querySelectorAll(".nav-link");
+const navLinks =
+    document.querySelectorAll(".nav-link");
 
-const moviesGrid = document.getElementById("moviesGrid");
+const moviesGrid =
+    document.getElementById("moviesGrid");
 
-const searchInput = document.getElementById("searchInput");
+const searchInput =
+    document.getElementById("searchInput");
 
 const filterButtons =
     document.querySelectorAll(".filter-btn");
@@ -276,7 +373,9 @@ function formatPrice(price) {
 
 function getMovieById(id) {
 
-    return movies.find(movie => movie.id === Number(id));
+    return movies.find(
+        movie => movie.id === Number(id)
+    );
 
 }
 
@@ -307,7 +406,8 @@ function renderMovies() {
                 movie.genre.includes(currentFilter);
 
 
-            return matchesSearch && matchesFilter;
+            return matchesSearch &&
+                   matchesFilter;
 
         });
 
@@ -327,112 +427,120 @@ function renderMovies() {
     noResults.classList.remove("show");
 
 
-    filteredMovies.forEach((movie, index) => {
+    filteredMovies.forEach(
+        (movie, index) => {
 
-        const card =
-            document.createElement("article");
-
-        card.className = "movie-card";
-
-        card.style.animationDelay =
-            `${index * 0.08}s`;
+            const card =
+                document.createElement("article");
 
 
-        card.innerHTML = `
-
-            <div class="movie-poster">
-
-                <img
-                    src="${movie.poster}"
-                    alt="${movie.title} poster"
-                    loading="lazy"
-                    onerror="this.src='https://placehold.co/600x900/15151C/FFFFFF?text=${encodeURIComponent(movie.title)}'"
-                >
-
-                <div class="rating-badge">
-                    <i class="fa-solid fa-star"></i>
-                    ${movie.rating}
-                </div>
-
-            </div>
+            card.className =
+                "movie-card";
 
 
-            <div class="movie-info">
-
-                <h3>
-                    ${movie.title}
-                </h3>
+            card.style.animationDelay =
+                `${index * 0.08}s`;
 
 
-                <div class="movie-tags">
+            card.innerHTML = `
 
-                    <span class="movie-tag">
-                        ${movie.genre[0]}
-                    </span>
+                <div class="movie-poster">
 
-                    <span class="movie-tag">
-                        ${movie.year}
-                    </span>
+                    <img
+                        src="${movie.poster}"
+                        alt="${movie.title} poster"
+                        loading="lazy"
+                        onerror="this.src='https://placehold.co/600x900/15151C/FFFFFF?text=${encodeURIComponent(movie.title)}'"
+                    >
 
-                    <span class="movie-tag">
-                        ${movie.duration}
-                    </span>
+                    <div class="rating-badge">
+
+                        <i class="fa-solid fa-star"></i>
+
+                        ${movie.rating}
+
+                    </div>
 
                 </div>
 
 
-                <p class="movie-description">
-                    ${movie.description}
-                </p>
+                <div class="movie-info">
+
+                    <h3>
+                        ${movie.title}
+                    </h3>
 
 
-                <div class="movie-bottom">
+                    <div class="movie-tags">
 
-                    <div class="movie-price">
-
-                        <span>
-                            Ticket
+                        <span class="movie-tag">
+                            ${movie.genre[0]}
                         </span>
 
-                        <strong>
-                            ${formatPrice(movie.price)}
-                        </strong>
+                        <span class="movie-tag">
+                            ${movie.year}
+                        </span>
+
+                        <span class="movie-tag">
+                            ${movie.duration}
+                        </span>
 
                     </div>
 
 
-                    <div class="movie-buttons">
+                    <p class="movie-description">
+                        ${movie.description}
+                    </p>
 
-                        <button
-                            class="card-btn details-btn"
-                            data-action="details"
-                            data-id="${movie.id}"
-                        >
-                            Details
-                        </button>
 
-                        <button
-                            class="card-btn"
-                            title="Watch Trailer"
-                            aria-label="Watch Trailer"
-                            data-action="trailer"
-                            data-id="${movie.id}"
-                        >
-                            <i class="fa-solid fa-play"></i>
-                        </button>
+                    <div class="movie-bottom">
+
+                        <div class="movie-price">
+
+                            <span>
+                                Ticket
+                            </span>
+
+                            <strong>
+                                ${formatPrice(movie.price)}
+                            </strong>
+
+                        </div>
+
+
+                        <div class="movie-buttons">
+
+                            <button
+                                class="card-btn details-btn"
+                                data-action="details"
+                                data-id="${movie.id}"
+                            >
+                                Details
+                            </button>
+
+                            <button
+                                class="card-btn"
+                                title="Watch Trailer"
+                                aria-label="Watch Trailer"
+                                data-action="trailer"
+                                data-id="${movie.id}"
+                            >
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+
+                        </div>
 
                     </div>
 
                 </div>
 
-            </div>
-
-        `;
+            `;
 
 
-        moviesGrid.appendChild(card);
+            moviesGrid.appendChild(card);
 
-    });
+        }
+    );
 
 }
 
@@ -451,10 +559,14 @@ function renderBookingMovies() {
         const option =
             document.createElement("option");
 
-        option.value = movie.id;
+
+        option.value =
+            movie.id;
+
 
         option.textContent =
             `${movie.title} — ${formatPrice(movie.price)}`;
+
 
         bookingMovie.appendChild(option);
 
@@ -470,7 +582,9 @@ function renderBookingMovies() {
 function updateBookingSummary() {
 
     const selectedMovie =
-        getMovieById(bookingMovie.value);
+        getMovieById(
+            bookingMovie.value
+        );
 
 
     if (!selectedMovie) {
@@ -525,9 +639,14 @@ function openModal(modal) {
 
     modal.classList.add("active");
 
-    modal.setAttribute("aria-hidden", "false");
+    modal.setAttribute(
+        "aria-hidden",
+        "false"
+    );
 
-    document.body.classList.add("modal-open");
+    document.body.classList.add(
+        "modal-open"
+    );
 
 }
 
@@ -543,12 +662,16 @@ function closeModal(modal) {
 
     modal.classList.remove("active");
 
-    modal.setAttribute("aria-hidden", "true");
+    modal.setAttribute(
+        "aria-hidden",
+        "true"
+    );
 
 
     /*
      * Stop YouTube playback
      */
+
     if (modal === trailerModal) {
 
         trailerFrame.src = "";
@@ -556,16 +679,17 @@ function closeModal(modal) {
     }
 
 
-    /*
-     * Check if another modal is still open.
-     */
     const activeModal =
-        document.querySelector(".modal.active");
+        document.querySelector(
+            ".modal.active"
+        );
 
 
     if (!activeModal) {
 
-        document.body.classList.remove("modal-open");
+        document.body.classList.remove(
+            "modal-open"
+        );
 
     }
 
@@ -585,42 +709,61 @@ function openMovieDetails(movieId) {
     if (!movie) return;
 
 
-    currentMovieId = movie.id;
+    currentMovieId =
+        movie.id;
 
 
-    document.getElementById("detailPoster").src =
+    document.getElementById(
+        "detailPoster"
+    ).src =
         movie.poster;
 
 
-    document.getElementById("detailPoster").alt =
+    document.getElementById(
+        "detailPoster"
+    ).alt =
         `${movie.title} poster`;
 
 
-    document.getElementById("detailGenre").textContent =
+    document.getElementById(
+        "detailGenre"
+    ).textContent =
         movie.genre.join(" • ");
 
 
-    document.getElementById("detailTitle").textContent =
+    document.getElementById(
+        "detailTitle"
+    ).textContent =
         movie.title;
 
 
-    document.getElementById("detailYear").textContent =
+    document.getElementById(
+        "detailYear"
+    ).textContent =
         movie.year;
 
 
-    document.getElementById("detailDuration").textContent =
+    document.getElementById(
+        "detailDuration"
+    ).textContent =
         movie.duration;
 
 
-    document.getElementById("detailRating").textContent =
+    document.getElementById(
+        "detailRating"
+    ).textContent =
         `${movie.rating}/10`;
 
 
-    document.getElementById("detailPrice").textContent =
+    document.getElementById(
+        "detailPrice"
+    ).textContent =
         formatPrice(movie.price);
 
 
-    document.getElementById("detailDescription").textContent =
+    document.getElementById(
+        "detailDescription"
+    ).textContent =
         movie.description;
 
 
@@ -642,7 +785,8 @@ function openTrailer(movieId) {
     if (!movie) return;
 
 
-    currentMovieId = movie.id;
+    currentMovieId =
+        movie.id;
 
 
     trailerTitle.textContent =
@@ -694,7 +838,10 @@ function openBooking(movieId = null) {
 function generateBookingId() {
 
     const randomNumber =
-        Math.floor(10000 + Math.random() * 90000);
+        Math.floor(
+            10000 +
+            Math.random() * 90000
+        );
 
 
     return `RM-${randomNumber}`;
@@ -706,11 +853,18 @@ function generateBookingId() {
    TOAST
 ========================================================= */
 
-function showToast(title, message) {
+function showToast(
+    title,
+    message
+) {
 
-    toastTitle.textContent = title;
+    toastTitle.textContent =
+        title;
 
-    toastMessage.textContent = message;
+
+    toastMessage.textContent =
+        message;
+
 
     toast.classList.add("show");
 
@@ -721,7 +875,9 @@ function showToast(title, message) {
     toastTimer =
         setTimeout(() => {
 
-            toast.classList.remove("show");
+            toast.classList.remove(
+                "show"
+            );
 
         }, 4500);
 
@@ -732,13 +888,20 @@ function showToast(title, message) {
    HAMBURGER MENU
 ========================================================= */
 
-hamburger.addEventListener("click", () => {
+hamburger.addEventListener(
+    "click",
+    () => {
 
-    hamburger.classList.toggle("active");
+        hamburger.classList.toggle(
+            "active"
+        );
 
-    navMenu.classList.toggle("active");
+        navMenu.classList.toggle(
+            "active"
+        );
 
-});
+    }
+);
 
 
 /* =========================================================
@@ -747,13 +910,20 @@ hamburger.addEventListener("click", () => {
 
 navLinks.forEach(link => {
 
-    link.addEventListener("click", () => {
+    link.addEventListener(
+        "click",
+        () => {
 
-        hamburger.classList.remove("active");
+            hamburger.classList.remove(
+                "active"
+            );
 
-        navMenu.classList.remove("active");
+            navMenu.classList.remove(
+                "active"
+            );
 
-    });
+        }
+    );
 
 });
 
@@ -763,7 +933,9 @@ navLinks.forEach(link => {
 ========================================================= */
 
 const sections =
-    document.querySelectorAll("main section");
+    document.querySelectorAll(
+        "main section"
+    );
 
 
 function updateActiveNav() {
@@ -777,8 +949,10 @@ function updateActiveNav() {
         const sectionTop =
             section.offsetTop;
 
+
         const sectionHeight =
             section.offsetHeight;
+
 
         const sectionId =
             section.getAttribute("id");
@@ -786,12 +960,15 @@ function updateActiveNav() {
 
         if (
             scrollPosition >= sectionTop &&
-            scrollPosition < sectionTop + sectionHeight
+            scrollPosition <
+            sectionTop + sectionHeight
         ) {
 
             navLinks.forEach(link => {
 
-                link.classList.remove("active");
+                link.classList.remove(
+                    "active"
+                );
 
 
                 if (
@@ -799,7 +976,9 @@ function updateActiveNav() {
                     `#${sectionId}`
                 ) {
 
-                    link.classList.add("active");
+                    link.classList.add(
+                        "active"
+                    );
 
                 }
 
@@ -816,52 +995,58 @@ function updateActiveNav() {
    SCROLL EVENT
 ========================================================= */
 
-window.addEventListener("scroll", () => {
+window.addEventListener(
+    "scroll",
+    () => {
 
-    /*
-     * Sticky navbar
-     */
+        if (window.scrollY > 50) {
 
-    if (window.scrollY > 50) {
+            navbar.classList.add(
+                "scrolled"
+            );
 
-        navbar.classList.add("scrolled");
+        } else {
 
-    } else {
+            navbar.classList.remove(
+                "scrolled"
+            );
 
-        navbar.classList.remove("scrolled");
+        }
+
+
+        if (window.scrollY > 500) {
+
+            backToTop.classList.add(
+                "show"
+            );
+
+        } else {
+
+            backToTop.classList.remove(
+                "show"
+            );
+
+        }
+
+
+        updateActiveNav();
 
     }
-
-
-    /*
-     * Back to top
-     */
-
-    if (window.scrollY > 500) {
-
-        backToTop.classList.add("show");
-
-    } else {
-
-        backToTop.classList.remove("show");
-
-    }
-
-
-    updateActiveNav();
-
-});
+);
 
 
 /* =========================================================
    SEARCH
 ========================================================= */
 
-searchInput.addEventListener("input", () => {
+searchInput.addEventListener(
+    "input",
+    () => {
 
-    renderMovies();
+        renderMovies();
 
-});
+    }
+);
 
 
 /* =========================================================
@@ -870,25 +1055,32 @@ searchInput.addEventListener("input", () => {
 
 filterButtons.forEach(button => {
 
-    button.addEventListener("click", () => {
+    button.addEventListener(
+        "click",
+        () => {
 
-        filterButtons.forEach(btn => {
+            filterButtons.forEach(btn => {
 
-            btn.classList.remove("active");
+                btn.classList.remove(
+                    "active"
+                );
 
-        });
-
-
-        button.classList.add("active");
-
-
-        currentFilter =
-            button.dataset.filter;
+            });
 
 
-        renderMovies();
+            button.classList.add(
+                "active"
+            );
 
-    });
+
+            currentFilter =
+                button.dataset.filter;
+
+
+            renderMovies();
+
+        }
+    );
 
 });
 
@@ -897,37 +1089,46 @@ filterButtons.forEach(button => {
    MOVIE CARD BUTTONS
 ========================================================= */
 
-moviesGrid.addEventListener("click", event => {
+moviesGrid.addEventListener(
+    "click",
+    event => {
 
-    const button =
-        event.target.closest("[data-action]");
-
-
-    if (!button) return;
-
-
-    const action =
-        button.dataset.action;
+        const button =
+            event.target.closest(
+                "[data-action]"
+            );
 
 
-    const movieId =
-        Number(button.dataset.id);
+        if (!button) return;
 
 
-    if (action === "details") {
+        const action =
+            button.dataset.action;
 
-        openMovieDetails(movieId);
+
+        const movieId =
+            Number(button.dataset.id);
+
+
+        if (action === "details") {
+
+            openMovieDetails(
+                movieId
+            );
+
+        }
+
+
+        if (action === "trailer") {
+
+            openTrailer(
+                movieId
+            );
+
+        }
 
     }
-
-
-    if (action === "trailer") {
-
-        openTrailer(movieId);
-
-    }
-
-});
+);
 
 
 /* =========================================================
@@ -935,31 +1136,53 @@ moviesGrid.addEventListener("click", event => {
 ========================================================= */
 
 document
-    .getElementById("detailTrailerBtn")
-    .addEventListener("click", () => {
+    .getElementById(
+        "detailTrailerBtn"
+    )
+    .addEventListener(
+        "click",
+        () => {
 
-        if (!currentMovieId) return;
+            if (!currentMovieId)
+                return;
 
 
-        closeModal(movieModal);
+            closeModal(
+                movieModal
+            );
 
-        openTrailer(currentMovieId);
 
-    });
+            openTrailer(
+                currentMovieId
+            );
+
+        }
+    );
 
 
 document
-    .getElementById("detailBuyBtn")
-    .addEventListener("click", () => {
+    .getElementById(
+        "detailBuyBtn"
+    )
+    .addEventListener(
+        "click",
+        () => {
 
-        if (!currentMovieId) return;
+            if (!currentMovieId)
+                return;
 
 
-        closeModal(movieModal);
+            closeModal(
+                movieModal
+            );
 
-        openBooking(currentMovieId);
 
-    });
+            openBooking(
+                currentMovieId
+            );
+
+        }
+    );
 
 
 /* =========================================================
@@ -989,7 +1212,9 @@ bookingForm.addEventListener(
         event.preventDefault();
 
 
-        if (!bookingForm.checkValidity()) {
+        if (
+            !bookingForm.checkValidity()
+        ) {
 
             bookingForm.reportValidity();
 
@@ -999,7 +1224,9 @@ bookingForm.addEventListener(
 
 
         const selectedMovie =
-            getMovieById(bookingMovie.value);
+            getMovieById(
+                bookingMovie.value
+            );
 
 
         if (!selectedMovie) {
@@ -1023,10 +1250,15 @@ bookingForm.addEventListener(
 
 
         const quantity =
-            Number(bookingQuantity.value);
+            Number(
+                bookingQuantity.value
+            );
 
 
-        if (!selectedDate || !selectedTime) {
+        if (
+            !selectedDate ||
+            !selectedTime
+        ) {
 
             showToast(
                 "Incomplete Form",
@@ -1042,37 +1274,43 @@ bookingForm.addEventListener(
             generateBookingId();
 
 
-        document.getElementById("bookingId")
-            .textContent = bookingId;
+        document.getElementById(
+            "bookingId"
+        ).textContent =
+            bookingId;
 
 
-        document.getElementById("successTitle")
-            .textContent = "Booking Confirmed!";
+        document.getElementById(
+            "successTitle"
+        ).textContent =
+            "Booking Confirmed!";
 
 
-        document.getElementById("successMessage")
-            .textContent =
+        document.getElementById(
+            "successMessage"
+        ).textContent =
             `Thank you for booking ${selectedMovie.title} with Radja's Movie. ${quantity} ticket${quantity > 1 ? "s" : ""} reserved for ${selectedDate} at ${selectedTime}.`;
 
 
-        closeModal(bookingModal);
+        closeModal(
+            bookingModal
+        );
 
 
-        openModal(successModal);
+        openModal(
+            successModal
+        );
 
 
         bookingForm.reset();
 
 
-        /*
-         * Restore first movie after reset
-         */
-
         bookingMovie.value =
             selectedMovie.id;
 
 
-        bookingQuantity.value = "1";
+        bookingQuantity.value =
+            "1";
 
 
         updateBookingSummary();
@@ -1092,7 +1330,9 @@ contactForm.addEventListener(
         event.preventDefault();
 
 
-        if (!contactForm.checkValidity()) {
+        if (
+            !contactForm.checkValidity()
+        ) {
 
             contactForm.reportValidity();
 
@@ -1122,10 +1362,13 @@ document.addEventListener(
     event => {
 
         const closeButton =
-            event.target.closest("[data-close]");
+            event.target.closest(
+                "[data-close]"
+            );
 
 
-        if (!closeButton) return;
+        if (!closeButton)
+            return;
 
 
         const modalId =
@@ -1133,7 +1376,9 @@ document.addEventListener(
 
 
         const modal =
-            document.getElementById(modalId);
+            document.getElementById(
+                modalId
+            );
 
 
         closeModal(modal);
@@ -1146,28 +1391,28 @@ document.addEventListener(
    CLOSE MODAL BY CLICKING OUTSIDE
 ========================================================= */
 
-document.querySelectorAll(".modal").forEach(modal => {
+document
+    .querySelectorAll(".modal")
+    .forEach(modal => {
 
-    modal.addEventListener("click", event => {
+        modal.addEventListener(
+            "click",
+            event => {
 
-        /*
-         * Close only when clicking overlay,
-         * not the modal content.
-         */
+                if (
+                    event.target.classList.contains(
+                        "modal-overlay"
+                    )
+                ) {
 
-        if (
-            event.target.classList.contains(
-                "modal-overlay"
-            )
-        ) {
+                    closeModal(modal);
 
-            closeModal(modal);
+                }
 
-        }
+            }
+        );
 
     });
-
-});
 
 
 /* =========================================================
@@ -1178,23 +1423,35 @@ document.addEventListener(
     "keydown",
     event => {
 
-        if (event.key !== "Escape") return;
+        if (
+            event.key !== "Escape"
+        )
+            return;
 
 
         const activeModal =
-            document.querySelector(".modal.active");
+            document.querySelector(
+                ".modal.active"
+            );
 
 
         if (activeModal) {
 
-            closeModal(activeModal);
+            closeModal(
+                activeModal
+            );
 
         }
 
 
-        hamburger.classList.remove("active");
+        hamburger.classList.remove(
+            "active"
+        );
 
-        navMenu.classList.remove("active");
+
+        navMenu.classList.remove(
+            "active"
+        );
 
     }
 );
@@ -1204,25 +1461,33 @@ document.addEventListener(
    BACK TO TOP
 ========================================================= */
 
-backToTop.addEventListener("click", () => {
+backToTop.addEventListener(
+    "click",
+    () => {
 
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
 
-});
+    }
+);
 
 
 /* =========================================================
    TOAST CLOSE
 ========================================================= */
 
-toastClose.addEventListener("click", () => {
+toastClose.addEventListener(
+    "click",
+    () => {
 
-    toast.classList.remove("show");
+        toast.classList.remove(
+            "show"
+        );
 
-});
+    }
+);
 
 
 /* =========================================================
@@ -1240,13 +1505,21 @@ function setMinimumDate() {
 
 
     const month =
-        String(today.getMonth() + 1)
-            .padStart(2, "0");
+        String(
+            today.getMonth() + 1
+        ).padStart(
+            2,
+            "0"
+        );
 
 
     const day =
-        String(today.getDate())
-            .padStart(2, "0");
+        String(
+            today.getDate()
+        ).padStart(
+            2,
+            "0"
+        );
 
 
     const dateString =
@@ -1267,7 +1540,9 @@ setMinimumDate();
 ========================================================= */
 
 const revealElements =
-    document.querySelectorAll(".reveal");
+    document.querySelectorAll(
+        ".reveal"
+    );
 
 
 const revealObserver =
@@ -1276,9 +1551,14 @@ const revealObserver =
 
             entries.forEach(entry => {
 
-                if (entry.isIntersecting) {
+                if (
+                    entry.isIntersecting
+                ) {
 
-                    entry.target.classList.add("show");
+                    entry.target.classList.add(
+                        "show"
+                    );
+
 
                     revealObserver.unobserve(
                         entry.target
@@ -1297,7 +1577,9 @@ const revealObserver =
 
 revealElements.forEach(element => {
 
-    revealObserver.observe(element);
+    revealObserver.observe(
+        element
+    );
 
 });
 
