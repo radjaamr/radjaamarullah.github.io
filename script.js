@@ -101,7 +101,7 @@ const movies = [
         description:
             "Seorang pria yang mengalami kelumpuhan bertemu dengan perempuan muda yang menjadi pengasuhnya. Hubungan mereka perlahan berubah dan membuat keduanya melihat kehidupan dari sudut pandang yang berbeda.",
         poster:
-            "https://m.media-amazon.com/images/M/MV5BMTQ2NjE4NDE2NV5BMl5BanBnXkFtZTgwOTcwNDE5NzE@._V1_.jpg",
+            "https://m.media-amazon.com/images/M/MV5BMTQ2NjE4NDE2NV5BMl5BanBnXkFtZTgwOTcwNDE5NzE@._V1_FMjpg_UX1000_.jpg",
         trailer:
             "https://www.youtube.com/embed/Eh993__rOxA?autoplay=1&rel=0"
     },
