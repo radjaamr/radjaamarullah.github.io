@@ -51,6 +51,8 @@
 
                 <a href="#subscription" class="nav-link">Subscription</a>
 
+                <a href="#register" class="nav-link">Register</a>
+
                 <a href="#about" class="nav-link">About</a>
 
                 <a href="#contact" class="nav-link">Contact</a>
@@ -420,6 +422,359 @@
 </section>
 <!-- ==================== END SUBSCRIPTION ==================== -->
 
+        <!-- ==================== CUSTOMER REGISTRATION ==================== -->
+<section id="register" class="registration-section">
+
+    <div class="container">
+
+        <div class="registration-header reveal">
+
+            <span class="section-label">
+                <i class="fa-solid fa-user-plus"></i>
+                CUSTOMER REGISTRATION
+            </span>
+
+            <h2>Register Your Account</h2>
+
+            <p>
+                Create your Radja's Movie account and choose your subscription package.
+            </p>
+
+        </div>
+
+
+        <div class="registration-wrapper reveal">
+
+            <form id="registrationForm">
+
+                <!-- FULL NAME -->
+                <div class="form-group">
+
+                    <label for="fullName">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- EMAIL -->
+                <div class="form-group">
+
+                    <label for="registerEmail">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="registerEmail"
+                        name="email"
+                        placeholder="example@email.com"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- PASSWORD -->
+                <div class="form-group">
+
+                    <label for="registerPassword">
+                        Password
+                    </label>
+
+                    <div class="password-wrapper">
+
+                        <input
+                            type="password"
+                            id="registerPassword"
+                            name="password"
+                            placeholder="Enter your password"
+                            minlength="6"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            id="passwordToggle"
+                            aria-label="Show password"
+                        >
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PACKAGE -->
+                <div class="form-group">
+
+                    <label for="subscriptionPackage">
+                        Subscription Package
+                    </label>
+
+                    <select
+                        id="subscriptionPackage"
+                        name="subscriptionPackage"
+                        required
+                    >
+
+                        <option value="">
+                            Select your package
+                        </option>
+
+                        <option value="Basic">
+                            Basic - $5.99/month
+                        </option>
+
+                        <option value="Standard">
+                            Standard - $9.99/month
+                        </option>
+
+                        <option value="Premium">
+                            Premium - $14.99/month
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- PAYMENT METHOD -->
+                <div class="form-group">
+
+                    <label>
+                        Payment Method
+                    </label>
+
+                    <div class="payment-methods">
+
+                        <!-- CARD -->
+                        <label class="payment-option">
+
+                            <input
+                                type="radio"
+                                name="paymentMethod"
+                                value="card"
+                                id="paymentCard"
+                                required
+                            >
+
+                            <span class="payment-option-content">
+
+                                <span class="payment-icon">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </span>
+
+                                <span>
+                                    <strong>
+                                        Debit / Credit Card
+                                    </strong>
+
+                                    <small>
+                                        Visa or Mastercard
+                                    </small>
+                                </span>
+
+                            </span>
+
+                        </label>
+
+
+                        <!-- E-WALLET -->
+                        <label class="payment-option">
+
+                            <input
+                                type="radio"
+                                name="paymentMethod"
+                                value="ewallet"
+                                id="paymentWallet"
+                            >
+
+                            <span class="payment-option-content">
+
+                                <span class="payment-icon">
+                                    <i class="fa-solid fa-wallet"></i>
+                                </span>
+
+                                <span>
+                                    <strong>
+                                        Digital Wallet
+                                    </strong>
+
+                                    <small>
+                                        DANA, OVO, GoPay
+                                    </small>
+                                </span>
+
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CARD PAYMENT -->
+                <div
+                    class="payment-details"
+                    id="cardPaymentDetails"
+                >
+
+                    <h3>
+                        Card Information
+                    </h3>
+
+
+                    <div class="payment-logo-row">
+
+                        <div class="card-brand-logo visa-logo">
+                            <i class="fa-brands fa-cc-visa"></i>
+                        </div>
+
+                        <div class="card-brand-logo mastercard-logo">
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="cardNumber">
+                            Card Number
+                        </label>
+
+                        <input
+                            type="text"
+                            id="cardNumber"
+                            inputmode="numeric"
+                            maxlength="19"
+                            placeholder="1234 5678 9012 3456"
+                            autocomplete="off"
+                        >
+
+                        <small class="form-note">
+                            For project simulation only. Do not enter a real card number.
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DIGITAL WALLET -->
+                <div
+                    class="payment-details"
+                    id="walletPaymentDetails"
+                >
+
+                    <h3>
+                        Choose Digital Wallet
+                    </h3>
+
+
+                    <div class="wallet-options">
+
+                        <label class="wallet-option">
+
+                            <input
+                                type="radio"
+                                name="wallet"
+                                value="DANA"
+                            >
+
+                            <span class="wallet-logo dana">
+                                DANA
+                            </span>
+
+                        </label>
+
+
+                        <label class="wallet-option">
+
+                            <input
+                                type="radio"
+                                name="wallet"
+                                value="OVO"
+                            >
+
+                            <span class="wallet-logo ovo">
+                                OVO
+                            </span>
+
+                        </label>
+
+
+                        <label class="wallet-option">
+
+                            <input
+                                type="radio"
+                                name="wallet"
+                                value="GoPay"
+                            >
+
+                            <span class="wallet-logo gopay">
+                                GoPay
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SUMMARY -->
+                <div class="registration-summary">
+
+                    <div>
+                        <span>Selected Package</span>
+                        <strong id="registerSummaryPackage">
+                            -
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>Price</span>
+                        <strong id="registerSummaryPrice">
+                            $0.00/month
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <!-- BUTTON -->
+                <button
+                    type="submit"
+                    class="btn btn-primary register-submit"
+                >
+
+                    <i class="fa-solid fa-user-check"></i>
+
+                    Register Now
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==================== END REGISTRATION ==================== -->
 
         <!-- =========================
              ABOUT
