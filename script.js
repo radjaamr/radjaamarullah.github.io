@@ -1583,6 +1583,326 @@ revealElements.forEach(element => {
 
 });
 
+/* =========================================================
+   CUSTOMER REGISTRATION
+========================================================= */
+
+const registrationForm =
+    document.getElementById("registrationForm");
+
+const subscriptionPackage =
+    document.getElementById("subscriptionPackage");
+
+const paymentCard =
+    document.getElementById("paymentCard");
+
+const paymentWallet =
+    document.getElementById("paymentWallet");
+
+const cardPaymentDetails =
+    document.getElementById("cardPaymentDetails");
+
+const walletPaymentDetails =
+    document.getElementById("walletPaymentDetails");
+
+const cardNumber =
+    document.getElementById("cardNumber");
+
+const passwordToggle =
+    document.getElementById("passwordToggle");
+
+const registerPassword =
+    document.getElementById("registerPassword");
+
+const registerSummaryPackage =
+    document.getElementById("registerSummaryPackage");
+
+const registerSummaryPrice =
+    document.getElementById("registerSummaryPrice");
+
+
+/* PACKAGE PRICE */
+
+const subscriptionPrices = {
+
+    Basic: 5.99,
+
+    Standard: 9.99,
+
+    Premium: 14.99
+
+};
+
+
+/* UPDATE PACKAGE SUMMARY */
+
+function updateRegistrationSummary() {
+
+    const selectedPackage =
+        subscriptionPackage.value;
+
+
+    if (!selectedPackage) {
+
+        registerSummaryPackage.textContent =
+            "-";
+
+        registerSummaryPrice.textContent =
+            "$0.00/month";
+
+        return;
+
+    }
+
+
+    registerSummaryPackage.textContent =
+        selectedPackage;
+
+
+    registerSummaryPrice.textContent =
+        `$${subscriptionPrices[selectedPackage].toFixed(2)}/month`;
+
+}
+
+
+/* PAYMENT METHOD */
+
+function updatePaymentMethod() {
+
+    if (paymentCard.checked) {
+
+        cardPaymentDetails.classList.add(
+            "show"
+        );
+
+        walletPaymentDetails.classList.remove(
+            "show"
+        );
+
+        cardNumber.required = true;
+
+
+        document
+            .querySelectorAll(
+                'input[name="wallet"]'
+            )
+            .forEach(input => {
+
+                input.required = false;
+
+            });
+
+    }
+
+
+    if (paymentWallet.checked) {
+
+        walletPaymentDetails.classList.add(
+            "show"
+        );
+
+        cardPaymentDetails.classList.remove(
+            "show"
+        );
+
+        cardNumber.required = false;
+
+
+        const walletOptions =
+            document.querySelectorAll(
+                'input[name="wallet"]'
+            );
+
+
+        if (walletOptions.length > 0) {
+
+            walletOptions[0].required =
+                true;
+
+        }
+
+    }
+
+}
+
+
+/* PACKAGE CHANGE */
+
+subscriptionPackage.addEventListener(
+    "change",
+    updateRegistrationSummary
+);
+
+
+/* PAYMENT CHANGE */
+
+paymentCard.addEventListener(
+    "change",
+    updatePaymentMethod
+);
+
+
+paymentWallet.addEventListener(
+    "change",
+    updatePaymentMethod
+);
+
+
+/* FORMAT CARD NUMBER */
+
+cardNumber.addEventListener(
+    "input",
+    event => {
+
+        let value =
+            event.target.value
+                .replace(/\D/g, "")
+                .substring(0, 16);
+
+
+        value =
+            value.replace(
+                /(.{4})/g,
+                "$1 "
+            ).trim();
+
+
+        event.target.value =
+            value;
+
+    }
+);
+
+
+/* SHOW / HIDE PASSWORD */
+
+passwordToggle.addEventListener(
+    "click",
+    () => {
+
+        const currentType =
+            registerPassword.type;
+
+
+        if (currentType === "password") {
+
+            registerPassword.type =
+                "text";
+
+            passwordToggle.innerHTML =
+                '<i class="fa-solid fa-eye-slash"></i>';
+
+        } else {
+
+            registerPassword.type =
+                "password";
+
+            passwordToggle.innerHTML =
+                '<i class="fa-solid fa-eye"></i>';
+
+        }
+
+    }
+);
+
+
+/* =========================================================
+   REGISTRATION SUBMIT
+========================================================= */
+
+registrationForm.addEventListener(
+    "submit",
+    event => {
+
+        event.preventDefault();
+
+
+        if (
+            !registrationForm.checkValidity()
+        ) {
+
+            registrationForm.reportValidity();
+
+            return;
+
+        }
+
+
+        const fullName =
+            document.getElementById(
+                "fullName"
+            ).value.trim();
+
+
+        const selectedPackage =
+            subscriptionPackage.value;
+
+
+        let paymentMethod = "";
+
+
+        if (paymentCard.checked) {
+
+            paymentMethod =
+                "Debit / Credit Card";
+
+        }
+
+
+        if (paymentWallet.checked) {
+
+            const selectedWallet =
+                document.querySelector(
+                    'input[name="wallet"]:checked'
+                );
+
+
+            if (!selectedWallet) {
+
+                showToast(
+                    "Payment Required",
+                    "Please select a digital wallet."
+                );
+
+                return;
+
+            }
+
+
+            paymentMethod =
+                selectedWallet.value;
+
+        }
+
+
+        showToast(
+            "Registration Successful!",
+            `${fullName} successfully registered for the ${selectedPackage} package using ${paymentMethod}.`
+        );
+
+
+        registrationForm.reset();
+
+
+        cardPaymentDetails.classList.remove(
+            "show"
+        );
+
+
+        walletPaymentDetails.classList.remove(
+            "show"
+        );
+
+
+        registerSummaryPackage.textContent =
+            "-";
+
+
+        registerSummaryPrice.textContent =
+            "$0.00/month";
+
+    }
+);
 
 /* =========================================================
    INITIALIZE
