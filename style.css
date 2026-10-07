@@ -2872,3 +2872,86 @@ a {
     }
 
 }
+
+/* =========================================================
+   CLICKABLE CONTACT INFO
+========================================================= */
+
+.contact-clickable {
+    position: relative;
+
+    color: inherit;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        padding 0.3s ease;
+}
+
+
+.contact-clickable:hover {
+    background:
+        rgba(229, 9, 20, 0.05);
+
+    transform:
+        translateX(5px);
+
+    padding-left: 10px;
+
+    padding-right: 10px;
+}
+
+
+.contact-clickable:hover
+.contact-icon {
+    background:
+        #E50914;
+
+    color:
+        #FFFFFF;
+}
+
+
+.contact-arrow {
+    margin-left: auto;
+
+    color:
+        #555555;
+
+    font-size:
+        11px;
+
+    opacity:
+        0;
+
+    transform:
+        translateX(-5px);
+
+    transition:
+        0.3s ease;
+}
+
+
+.contact-clickable:hover
+.contact-arrow {
+    opacity:
+        1;
+
+    color:
+        #E50914;
+
+    transform:
+        translateX(0);
+}
+
+
+.contact-clickable p {
+    margin: 0;
+
+    color:
+        #FFFFFF;
+}
