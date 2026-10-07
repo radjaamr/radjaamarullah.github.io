@@ -892,87 +892,81 @@
 
                         <form id="contactForm">
 
-                            <div class="form-row">
+                            <form id="contactForm">
 
-                                <div class="form-group">
+    <div class="form-row">
 
-                                    <label for="contactName">
-                                        Name
-                                    </label>
+        <div class="form-group">
+            <label for="contactName">Name</label>
 
-                                    <input
-                                        type="text"
-                                        id="contactName"
-                                        name="name"
-                                        placeholder="Your name"
-                                        required
-                                    >
-
-                                </div>
+            <input
+                type="text"
+                id="contactName"
+                name="name"
+                placeholder="Your name"
+                required
+            >
+        </div>
 
 
-                                <div class="form-group">
+        <div class="form-group">
+            <label for="contactEmail">Email</label>
 
-                                    <label for="contactEmail">
-                                        Email
-                                    </label>
+            <input
+                type="email"
+                id="contactEmail"
+                name="email"
+                placeholder="your@email.com"
+                required
+            >
+        </div>
 
-                                    <input
-                                        type="email"
-                                        id="contactEmail"
-                                        name="email"
-                                        placeholder="your@email.com"
-                                        required
-                                    >
-
-                                </div>
-
-                            </div>
+    </div>
 
 
-                            <div class="form-group">
+    <div class="form-group">
 
-                                <label for="contactSubject">
-                                    Subject
-                                </label>
+        <label for="contactSubject">
+            Subject
+        </label>
 
-                                <input
-                                    type="text"
-                                    id="contactSubject"
-                                    name="subject"
-                                    placeholder="What is this about?"
-                                    required
-                                >
+        <input
+            type="text"
+            id="contactSubject"
+            name="subject"
+            placeholder="What is this about?"
+            required
+        >
 
-                            </div>
-
-
-                            <div class="form-group">
-
-                                <label for="contactMessage">
-                                    Message
-                                </label>
-
-                                <textarea
-                                    id="contactMessage"
-                                    name="message"
-                                    rows="6"
-                                    placeholder="Write your message..."
-                                    required
-                                ></textarea>
-
-                            </div>
+    </div>
 
 
-                            <button
-                                type="submit"
-                                class="btn btn-primary submit-btn"
-                            >
-                                Send Message
-                                <i class="fa-solid fa-paper-plane"></i>
-                            </button>
+    <div class="form-group">
 
-                        </form>
+        <label for="contactMessage">
+            Message
+        </label>
+
+        <textarea
+            id="contactMessage"
+            name="message"
+            rows="6"
+            placeholder="Write your message..."
+            required
+        ></textarea>
+
+    </div>
+
+
+    <button
+        type="submit"
+        class="btn btn-primary submit-btn"
+    >
+        Send Message
+        <i class="fa-solid fa-paper-plane"></i>
+    </button>
+
+</form>
 
                     </div>
 
@@ -981,95 +975,123 @@
 
                     <div class="contact-info reveal">
 
-                        <div class="contact-info-card">
+    <!-- EMAIL -->
+    <a
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=amarullahradja@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="contact-info-card contact-clickable"
+    >
 
-                            <div class="contact-icon">
-                                <i class="fa-solid fa-envelope"></i>
-                            </div>
+        <div class="contact-icon">
+            <i class="fa-solid fa-envelope"></i>
+        </div>
 
-                            <div>
-                                <span>Email</span>
-                                <a href="mailto:amarullahradja@gmail.com">
-                                    amarullahradja@gmail.com
-                                </a>
-                            </div>
+        <div>
+            <span>Email</span>
 
-                        </div>
+            <p>
+                amarullahradja@gmail.com
+            </p>
+        </div>
 
+        <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
 
-                        <div class="contact-info-card">
-
-                            <div class="contact-icon">
-                                <i class="fa-solid fa-phone"></i>
-                            </div>
-
-                            <div>
-                                <span>Phone</span>
-                                <a href="tel:+6289654085219">
-                                    +62 896-5408-5219
-                                </a>
-                            </div>
-
-                        </div>
+    </a>
 
 
-                        <div class="contact-info-card">
+    <!-- WHATSAPP -->
+    <a
+        href="https://wa.me/6289654085219?text=Halo%20Radja%27s%20Movie%2C%20saya%20ingin%20bertanya."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="contact-info-card contact-clickable"
+    >
 
-                            <div class="contact-icon">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </div>
+        <div class="contact-icon">
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
 
-                            <div>
-                                <span>Location</span>
-                                <p>Tangerang, Indonesia</p>
-                            </div>
+        <div>
+            <span>WhatsApp</span>
 
-                        </div>
+            <p>
+                +62 896-5408-5219
+            </p>
+        </div>
+
+        <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+
+    </a>
 
 
-                        <div class="social-area">
+    <!-- LOCATION -->
+    <a
+        href="https://www.google.com/maps/search/?api=1&query=Jl.%20Raya%20Cisoka%20No.5%2C%20Solear%2C%20Kec.%20Solear%2C%20Kabupaten%20Tangerang%2C%20Banten%2015730"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="contact-info-card contact-clickable"
+    >
 
-                            <h4>Follow Us</h4>
+        <div class="contact-icon">
+            <i class="fa-solid fa-location-dot"></i>
+        </div>
 
-                            <div class="social-links">
+        <div>
+            <span>Location</span>
 
-                                <a
-                                    href="#"
-                                    aria-label="Instagram"
-                                >
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
+            <p>
+                Jl. Raya Cisoka No.5, Solear, Tangerang
+            </p>
+        </div>
 
-                                <a
-                                    href="#"
-                                    aria-label="Facebook"
-                                >
-                                    <i class="fa-brands fa-facebook-f"></i>
-                                </a>
+        <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
 
-                                <a
-                                    href="#"
-                                    aria-label="Twitter"
-                                >
-                                    <i class="fa-brands fa-x-twitter"></i>
-                                </a>
+    </a>
 
-                                <a
-                                    href="#"
-                                    aria-label="YouTube"
-                                >
-                                    <i class="fa-brands fa-youtube"></i>
-                                </a>
 
-                            </div>
+    <!-- SOCIAL MEDIA -->
+    <div class="social-area">
 
-                        </div>
+        <h4>
+            Follow Us
+        </h4>
 
-                    </div>
+        <div class="social-links">
 
-                </div>
+            <a
+                href="#"
+                aria-label="Instagram"
+            >
+                <i class="fa-brands fa-instagram"></i>
+            </a>
 
-            </div>
+            <a
+                href="#"
+                aria-label="Facebook"
+            >
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a
+                href="#"
+                aria-label="Twitter"
+            >
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+            <a
+                href="#"
+                aria-label="YouTube"
+            >
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
 
         </section>
 
