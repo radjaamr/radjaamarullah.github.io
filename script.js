@@ -1320,7 +1320,7 @@ bookingForm.addEventListener(
 
 
 /* =========================================================
-   CONTACT FORM
+   CONTACT FORM - OPEN GMAIL
 ========================================================= */
 
 contactForm.addEventListener(
@@ -1330,9 +1330,9 @@ contactForm.addEventListener(
         event.preventDefault();
 
 
-        if (
-            !contactForm.checkValidity()
-        ) {
+        /* Validasi form */
+
+        if (!contactForm.checkValidity()) {
 
             contactForm.reportValidity();
 
@@ -1341,13 +1341,99 @@ contactForm.addEventListener(
         }
 
 
-        showToast(
-            "Message sent successfully!",
-            "Thank you for contacting Radja's Movie."
+        /* Ambil isi form */
+
+        const name =
+            document
+                .getElementById("contactName")
+                .value
+                .trim();
+
+
+        const email =
+            document
+                .getElementById("contactEmail")
+                .value
+                .trim();
+
+
+        const subject =
+            document
+                .getElementById("contactSubject")
+                .value
+                .trim();
+
+
+        const message =
+            document
+                .getElementById("contactMessage")
+                .value
+                .trim();
+
+
+        /* Email tujuan */
+
+        const destinationEmail =
+            "amarullahradja@gmail.com";
+
+
+        /* Susun isi email */
+
+        const emailBody =
+`Hello Radja's Movie,
+
+My name is ${name}.
+
+Email:
+${email}
+
+Message:
+${message}
+
+Thank you.`;
+
+
+        /*
+         * Buat Gmail Compose URL
+         */
+
+        const gmailURL =
+            "https://mail.google.com/mail/?view=cm&fs=1" +
+
+            "&to=" +
+            encodeURIComponent(
+                destinationEmail
+            ) +
+
+            "&su=" +
+            encodeURIComponent(
+                subject
+            ) +
+
+            "&body=" +
+            encodeURIComponent(
+                emailBody
+            );
+
+
+        /*
+         * Buka Gmail di tab baru
+         */
+
+        window.open(
+            gmailURL,
+            "_blank"
         );
 
 
-        contactForm.reset();
+        /*
+         * Notification
+         */
+
+        showToast(
+            "Opening Gmail",
+            "Complete your message and press Send in Gmail."
+        );
 
     }
 );
